@@ -28,6 +28,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: var(--Montserrat-font);
+  background-color: var(--Cream);
 
 }
 
@@ -37,7 +38,7 @@ main{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 
 main, img, .top-section {
@@ -66,11 +67,14 @@ section{
 }
 
 .sub-title{
-  font-size: .9em;
   font-weight: 500;
-  color: var(--Dark-grayish-blue);
   letter-spacing: .4em;
   text-transform: uppercase;
+}
+
+.sub-title, .description {
+  font-size: .9em;
+  color: var(--Dark-grayish-blue);
 }
 
 .product-name{
@@ -84,7 +88,45 @@ section{
 }
 
 .description {
-  font-size: 1em;
   font-weight: 500;
+}
+
+.price {
+  display: flex;
+  gap: 1em;
+  padding: 8px 0 8px 0;
+}
+
+.current-price {
+  font-family: var(--Fraunces-font);
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--Dark-cyan);
+  margin: 0;
+}
+
+.discount-price {
+  margin: 0;
+  align-self: center;
+  text-decoration: line-through;
   color: var(--Dark-grayish-blue);
+  font-weight: 500;
+}
+
+.btn-cart {}
+
+button {
+  font-size: 1.4em;
+  font-weight: 500;
+  background-color: var(--Dark-cyan);
+  border-radius: 5px;
+  border: none;
+  color: var(--White);
+  width: 100%;
+  padding: 8px 0;
+}
+
+button img{
+  width: .8em;
+  padding: 0 10px 0 10px;
 }
