@@ -62,7 +62,7 @@ main, img, .top-section {
 
 section{
   border: 1px solid green;
-  margin: 0 10px 0 10px;
+  margin: 0 12px 0 12px;
 }
 
 .sub-title{
@@ -76,8 +76,15 @@ section{
 .product-name{
   font-family: var(--Fraunces-font);
   font-size: 2em;
+  font-weight: 700;
 }
 
 .product-name h1{
   margin: .2em 0 .2em 0;
+}
+
+.description {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
 }
