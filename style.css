@@ -1,0 +1,30 @@
+*{
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-section{
+  border: 1px solid orange;
+  width: 90%;
+  height: 250px;
+}
+
+.bottom-section{
+  border: 1px solid orange;
+  width: 40%;
+  height: 250px;
+}
