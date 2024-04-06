@@ -33,12 +33,15 @@ body{
 }
 
 main{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 90%;
+  background-color: var(--White);
+  padding: 0 0 25px 0;
+  margin: 15px;
 }
 
 main, img, .top-section {
@@ -57,17 +60,18 @@ main, img, .top-section {
 /*********************  ************************/
 
 .bottom-section{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
 }
 
 section{
-  border: 1px solid green;
-  margin: 0 12px 0 12px;
+  /* border: 1px solid green; */
+  margin: 0 25px 0 25px;
 }
 
-.sub-title{
+.sub-title p{
   font-weight: 500;
+  margin: 25px 0 0 0;
   letter-spacing: .4em;
   text-transform: uppercase;
 }
@@ -84,17 +88,23 @@ section{
 }
 
 .product-name h1{
-  margin: .2em 0 .2em 0;
+  margin: 11px 0 0 0;
 }
 
 .description {
   font-weight: 500;
+  font-size: 14px;
+  padding: 0;
+}
+
+.description p {
+  margin: 10px 0 15px 0;
 }
 
 .price {
   display: flex;
-  gap: 1em;
-  padding: 8px 0 8px 0;
+  gap: 1.5em;
+  padding: 12px 0 20px 0;
 }
 
 .current-price {
@@ -124,9 +134,49 @@ button {
   color: var(--White);
   width: 100%;
   padding: 8px 0;
+  cursor: pointer;
 }
 
 button img{
   width: .8em;
   padding: 0 10px 0 10px;
+}
+
+button:hover{
+  background-color: var(--Very-dark-blue);
+}
+
+@media screen and (min-width: 650px) {
+  main{
+    flex-direction: row;
+    border-radius: 0;
+    padding: 0;
+    max-width: 650px;
+  }
+
+  .top-section{
+    /* border: 1px solid red; */
+    border-radius: 0;
+    margin: 0;
+    height: 450px;
+    width: 100%;
+    content: url(./images/image-product-desktop.jpg);
+
+  }
+
+  .product-name h1{
+    font-size: 1em;  
+  }
+
+  .bottom-section{
+    width: 90%;
+  }
+
+  .btn-cart {
+    margin: 0;
+    /* border: 1px solid purple; */
+    margin-bottom: 25px;
+    height: auto;
+  }
+  
 }
