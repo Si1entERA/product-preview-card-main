@@ -42,6 +42,8 @@ main{
   background-color: var(--White);
   padding: 0 0 25px 0;
   margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.19);
 }
 
 main, img, .top-section {
@@ -126,14 +128,14 @@ section{
 .btn-cart {}
 
 button {
-  font-size: 1.4em;
+  font-size: 1em;
   font-weight: 500;
   background-color: var(--Dark-cyan);
   border-radius: 5px;
   border: none;
   color: var(--White);
   width: 100%;
-  padding: 8px 0;
+  padding: 15px 0;
   cursor: pointer;
 }
 
@@ -149,14 +151,15 @@ button:hover{
 @media screen and (min-width: 650px) {
   main{
     flex-direction: row;
-    border-radius: 0;
+    /* border-bottom-left-radius: 10px; */
     padding: 0;
     max-width: 650px;
   }
 
   .top-section{
     /* border: 1px solid red; */
-    border-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
     margin: 0;
     height: 450px;
     width: 100%;
