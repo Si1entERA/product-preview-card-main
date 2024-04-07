@@ -1,7 +1,6 @@
 *{
   .attribution { font-size: 11px; text-align: center; }
   .attribution a { color: hsl(228, 45%, 44%); }
-  /* font-family: "Fraunces", serif; */
 }
 
 :root{
@@ -29,7 +28,6 @@ body{
   padding: 0;
   font-family: var(--Montserrat-font);
   background-color: var(--Cream);
-
 }
 
 main{
@@ -46,11 +44,13 @@ main{
   box-shadow: 0px 0px 21px 6px rgba(0,0,0,0.19);
 }
 
+
+/********************* TOP SECTION START ************************/
 main, img, .top-section {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-/*********************  ************************/
+
 .top-section{
   /* border: 1px solid orange; */
   width: 100%;
@@ -59,8 +59,9 @@ main, img, .top-section {
 .top-section img {
   width: 100%;
 }
-/*********************  ************************/
+/********************* TOP SECTION END ************************/
 
+/********************* BOTTOM SECTION START ************************/
 .bottom-section{
   /* border: 1px solid red; */
   width: 100%;
@@ -83,7 +84,7 @@ section{
   color: var(--Dark-grayish-blue);
 }
 
-.product-name{
+.product-name, .current-price {
   font-family: var(--Fraunces-font);
   font-size: 2em;
   font-weight: 700;
@@ -110,9 +111,6 @@ section{
 }
 
 .current-price {
-  font-family: var(--Fraunces-font);
-  font-size: 2em;
-  font-weight: 700;
   color: var(--Dark-cyan);
   margin: 0;
 }
@@ -122,10 +120,8 @@ section{
   align-self: center;
   text-decoration: line-through;
   color: var(--Dark-grayish-blue);
-  font-weight: 500;
+  font-weight: 400;
 }
-
-.btn-cart {}
 
 button {
   font-size: 1em;
@@ -147,11 +143,12 @@ button img{
 button:hover{
   background-color: var(--Very-dark-blue);
 }
+/********************* BOTTOM SECTION END ************************/
+
 
 @media screen and (min-width: 650px) {
   main{
     flex-direction: row;
-    /* border-bottom-left-radius: 10px; */
     padding: 0;
     max-width: 650px;
   }
@@ -164,7 +161,6 @@ button:hover{
     height: 450px;
     width: 100%;
     content: url(./images/image-product-desktop.jpg);
-
   }
 
   .product-name h1{
@@ -177,9 +173,7 @@ button:hover{
 
   .btn-cart {
     margin: 0;
-    /* border: 1px solid purple; */
     margin-bottom: 25px;
-    height: auto;
   }
   
 }
